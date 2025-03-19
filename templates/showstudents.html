@@ -1,0 +1,43 @@
+{% extends 'starter-page.html' %}
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+{% load static %}
+
+
+{% block content %}
+    <h1>All Admissions</h1>
+<div class="d-flex flex-wrap gap-5 container">
+
+        {% for y in all1 %}
+        <div class="card p-3 shadow-lg bg-secondary-subtle" style="width: 300px">
+
+
+ <div class="card w-30 p-3 shadow-lg">
+
+        {% if y.image %}
+        <img src="{{ y.image.url }}" class="img-fluid mb-2" alt="Image" style="height: 200px; object-fit: cover;">
+        {% endif %}
+
+
+            <p class="text-primary fw-bold">{{ y.fullname }}</p>
+            <p> <strong>lastname</strong> : {{ y.lastname }}</p>
+            <p> <strong>Email</strong> : {{ y.email }}</p>
+            <p> <strong>phone</strong> : {{ y.phone }}</p>
+            <p> <strong>address</strong>: {{ y.address }}</p>
+            <p> <strong>date</strong>: {{ y.date }}</p>
+            <p> <strong>gender</strong>: {{ y.gender }}</p>
+            <p>
+                 <a href="{% url 'pay' %}" class="text-success">
+                    <i class="bi bi-credit-card"></i>Pay
+                </a>
+            </p>
+        </div>
+        </div>
+        {% endfor %}
+
+</div>
+
+
+
+{% endblock %}

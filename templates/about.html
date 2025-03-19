@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>About - Mentor Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  {% load static %}
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.png'%}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png'%}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{% static 'assets/css/main.css'%}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Mentor
+  * Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="about-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Mofac</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="{% url 'index'%}">Home<br></a></li>
+          <li><a href="{% url 'about'%}" class="active">About</a></li>
+          <li><a href="{% url 'courses'%}">Courses</a></li>
+          <li><a href="{% url 'trainers'%}">Trainers</a></li>
+          <li><a href="{% url 'events'%}">Events</a></li>
+          <li><a href="{% url 'pricing'%}">Pricing</a></li>
+          <li><a href="{% url 'location'%}">location</a></li>
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="courses.html">Get Started</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1>About Us<br></h1>
+                <h2>Welcome to MOFAC Technology Training Institute
+</h2>
+              <p class="mb-0">Regardless of your background, you can acquire digital skills that are in demand by employers and clients. Web and app developers have some of the highest-paying jobs that don't require a college degree. Join eMobilis, the leading software development school in Nairobi, and learn web & mobile app development among other useful digital skills.
+
+</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="{% url 'index'%}">Home</a></li>
+            <li class="current">About Us<br></li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <!-- About Us Section -->
+    <section id="about-us" class="section about-us">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
+            <img src="{% static 'assets/img/about-2.jpg' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
+            <h3>START YOUR TECH JOURNEY WITH MOFAC SCHOOL</h3>
+            <p class="fst-italic">Mofac School is a coding school that offers virtual part-time programs in Data Science and Software Development to students in emerging economies. Mofac is categorically known for its one-on-one technical mentorship model where students are given personalised support by experts throughout the program.
+
+Our financing options allow students to defer 50% of their tuition through income-share agreements. Students paying upfront also have a 50% money-back guarantee if they do not get a job in 12 months on graduation.
+            </p>
+              <h2>programs</h2>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Digital Skills on Google
+</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Python and Django Framework
+
+</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Development of software using JavaScript and Animate for KICD projects
+</span></li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Us Section -->
+
+    <!-- Counts Section -->
+    <section id="counts" class="section counts light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="1232" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Students</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="64" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Courses</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="42" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Events</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Trainers</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Counts Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>What are they saying</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 20
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{% static 'assets/img/testimonials/testimonials-1.jpg' %}" class="testimonial-img" alt="">
+                  <h3>Luke Evans</h3>
+                  <h4>Ceo &amp; Founder</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>“I knew that I wanted to earn my Certified Public Secretaries (CPS) certificate from a school with a good reputation. I can equivocally state that I was not disappointed with the Traction School of Governance and Business. Owing to the meticulous care and skill with which all the courses were delivered, I received excellent value for my educational and financial investment and time commitment. I am a proud alumna who can speak to the fact that the intellectual opportunities offered by the school are completely unrivalled.“
+
+</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{% static 'assets/img/testimonials/testimonials-2.jpg' %}" class="testimonial-img" alt="">
+                  <h3>Claire Njoki</h3>
+                  <h4>Designer</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>I am a CS student at University of Nairobi of Governance. Mofac skills  has assisted me to study for my Kasneb Exams. I am so impressed by the level of support and structure the online classes and the lecturers have offered me. The online classes have made it easy to manage alongside other commitments (job, school, life). The Lecturers and admins are all extremely responsive to student questions and needs. </span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{% static 'assets/img/testimonials/testimonials-3.jpg' %}" class="testimonial-img" alt="">
+                  <h3>Mary Blessings</h3>
+                  <h4>Parent</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>Great competition, fun and educative! My daughter thoroughly enjoyed the process of creating the project and presentation video. The award encourages her to keep coding! Receptionist is helpful and friendly. Class tutor is caring and engaging. Small group class size physical, more effective learning experience for my son. Thanks.
+
+</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{% static 'assets/img/testimonials/testimonials-4.jpg' %}" class="testimonial-img" alt="">
+                  <h3>Ojijo Tom</h3>
+                  <h4>Freelancer</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>Response are timely to any concerns we have.Coding lab helps in resolving any issues during registration.This competition made me become more innovative and to think from the consumers perspective.Teacher Hovan is knowledgeable and enthusiastic with a genuine passion for getting the best out of his students. Good to combine coding with robotics to address real world issues.</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-wrap">
+                <div class="testimonial-item">
+                  <img src="{% static 'assets/img/testimonials/testimonials-5.jpg' %}" class="testimonial-img" alt="">
+                  <h3>Frankline Kabari</h3>
+                  <h4>Entrepreneur</h4>
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    <i class="bi bi-quote quote-icon-left"></i>
+                    <span>During the whole course i had the support of different teachers. All of them were very kind to me. In this course i learned to create a game with python and also create different potion which has different powers. This lesson was very engaging and helpful for me as i would like to create more games by myself. I have to thank coding lab sincerely from the bottom of my hearty for providing me with this wonderful course.
+
+</span>
+                    <i class="bi bi-quote quote-icon-right"></i>
+                  </p>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Mofac</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>A109 cluster Street</p>
+            <p>Nakuru</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+254745336798</span></p>
+            <p><strong>Email:</strong> <span>mofac234@gmail.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Product Management</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Our Newsletter</h4>
+          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+          <form action="forms/newsletter.php" method="post" class="php-email-form">
+            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Mofac</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">GROUP 4</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js'%}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js'%}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js'%}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js'%}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'assets/js/main.js'%}"></script>
+
+</body>
+
+</html>
